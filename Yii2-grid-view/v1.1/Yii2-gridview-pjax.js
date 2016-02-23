@@ -1,13 +1,13 @@
-/*
+/* https://github.com/sachingvit/Yii2-customization/tree/master/Yii2-grid-view/v1.1
  * Description: Yii2 grid view filter on keypress 
  * Author: Sachin Jain
- * Added on : 23 Feb,2016 
- * v1.1 
+ * Modified on : 23 Feb,2016 
+ * version 1.1 
  */
 
 var input;
 var submit_form = false;
-var filter_selector = '.grid-view input';
+var filter_selector = '.grid-view input,.grid-view select';
 var actionColunm = null;
 var abortCount = 0;
 
