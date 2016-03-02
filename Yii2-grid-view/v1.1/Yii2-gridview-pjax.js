@@ -69,11 +69,13 @@ $(document)
             submit_form = false;
             var i = $("[name='" + input + "']");
             var val = i.val();
-            abortCount++;
-//            i.val(val).focus();
-            event.preventDefault();
-            event.stopPropagation();
-            return false;
+            //abortCount++;
+            /*Reload page on every error */
+            location.reload();
+            //i.val(val).focus();
+            //event.preventDefault();
+            //event.stopPropagation();
+            //return false;
         })
         .on('pjax:complete', function (event) {
             if (abortCount > 10) {
